@@ -1,3 +1,9 @@
-.home {
-  font-size: 30px;
-}
+@import "variables.scss";
+@import "structure.scss";
+@import "nav/nav.scss";
+@import "nav/foldout.scss";
+@import "footer.scss";
+
+@import "home/home.scss";
+@import "loginpage/loginpage.scss";
+@import "cart/cart.scss";

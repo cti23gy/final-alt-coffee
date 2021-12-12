@@ -1,0 +1,100 @@
+{
+    "COFFEE_ITEMS": [
+        {
+            "image": "../images/K-Supreme-Plus-SMART-Coffee-Maker_5000361470_swatch.webp",
+            "name": "K-Supreme Plus® SMART Single Serve Coffee Maker",
+            "price": 199.99,
+            "saleprice": 99.99,
+            "scorereviews": 4.5,
+            "totalreviews": 669
+        },
+        {
+            "image": "../images/K-Mini-Coffee-Maker_5000203382_swatch.webp",
+            "name": "K-Mini® Single Serve Coffee Maker",
+            "price": 79.99,
+            "saleprice": 79.99,
+            "scorereviews": 3.9,
+            "totalreviews": 322
+        },
+        {
+            "image": "../images/K-Select-Coffee-Maker_5000359828_swatch.webp",
+            "name": "Keurig® K-Select® Coffee Maker",
+            "price": 99.99,
+            "saleprice": 89.99,
+            "scorereviews": 4.1,
+            "totalreviews": 1771
+        },
+        {
+            "image": "../images/K-Elite-Single-Serve-Coffee-Maker_5000359832_swatch.webp",
+            "name": "Keurig® K-Elite® Single Serve Coffee Maker",
+            "price": 179.99,
+            "saleprice": 89.99,
+            "scorereviews": 4.3,
+            "totalreviews": 2705
+        },
+        {
+            "image": "../images/K-Slim-Single-Serve-Coffee-Maker_5000363760_swatch.webp",
+            "name": "K-Slim® Single Serve Coffee Maker",
+            "price": 179.99,
+            "saleprice": 89.99,
+            "scorereviews": 4.3,
+            "totalreviews": 771
+        },
+        {
+            "image": "../images/K-Cafe-Coffee-Latte-Cappuccino-Maker_5000201735_swatch.webp",
+            "name": "K-Café® Single Serve Coffee Latte & Cappuccino Maker",
+            "price": 99.99,
+            "saleprice": 89.99,
+            "scorereviews": 3.9,
+            "totalreviews": 1956
+        },
+        {
+            "image": "../images/K-Mini-Plus-Coffee-Maker_5000202016_swatch.webp",
+            "name": "K-Mini Plus® Single Serve Coffee Maker",
+            "price": 89.99,
+            "saleprice": 49.99,
+            "scorereviews": 4.0,
+            "totalreviews": 932
+        },
+        {
+            "image": "../images/K-Duo-Single-Serve-Carafe-Coffee-Maker_5000204977_swatch.webp",
+            "name": "K-Duo™ Single Serve & Carafe Coffee Maker",
+            "price": 169.99,
+            "saleprice": 89.99,
+            "scorereviews": 3.6,
+            "totalreviews": 995
+        },
+        {
+            "image": "../images/K50-Coffee-Maker_5000204441_swatch.webp",
+            "name": "Keurig® K-Classic® Coffee Maker",
+            "price": 119.99,
+            "saleprice": 69.99,
+            "scorereviews": 4.1,
+            "totalreviews": 1983
+        },
+        {
+            "image": "../images/K-Supreme-Single-Serve-Coffee-Maker_5000362102_swatch.webp",
+            "name": "Keurig® K-Supreme® Single Serve Coffee Maker",
+            "price": 119.99,
+            "saleprice": 74.99,
+            "scorereviews": 4.0,
+            "totalreviews": 1479
+        },
+        {
+            "image": "../images/K-Duo-Plus-Single-Serve-Carafe-Coffee-Maker_5000363818_swatch.webp",
+            "name": "K-Duo Plus™ Single Serve & Carafe Coffee Maker",
+            "price": 199.99,
+            "saleprice": 114.99,
+            "scorereviews": 4.0,
+            "totalreviews": 1006
+        },
+        {
+            "image": "../images/K-Duo-SE-Single-Serve-Carafe-Coffee-Maker_5000362326_swatch.webp",
+            "name": "K-Duo® Special Edition Single Serve & Carafe Coffee Maker",
+            "price": 199.99,
+            "saleprice": 99.99,
+            "scorereviews": 4.3,
+            "totalreviews": 194
+        }
+    ]
+}

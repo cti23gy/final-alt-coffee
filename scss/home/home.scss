@@ -1,0 +1,197 @@
+.home {
+  //background-color: chartreuse;
+  min-height: 400px;
+
+  .headerimg {
+    width: 1200px;
+    height: 200px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/CLP-Banner-CoffeeMakers-Holiday.webp);
+
+    text-align: center;
+    padding-top: 40px;
+    margin: 0 auto;
+
+    h1 {
+      font-family: GillLight;
+      font-size: 55px;
+      color: #fff;
+    }
+
+    h2 {
+      font-family: Lato;
+      font-size: 14px;
+      color: #fff;
+    }
+  }
+
+  .options {
+    width: 1200px;
+    height: 80px;
+    //background-color: #00ffff;
+    margin: 0 auto;
+
+    display: flex;
+
+    a {
+      //background-color: deepskyblue;
+      text-decoration: none;
+      display: flex;
+      font-family: Lato;
+      font-size: 14px;
+
+      border: 2px solid #999;
+
+      margin: 16px 5px;
+      padding: 14px 10px;
+    }
+
+    .sort {
+      //background-color: forestgreen;
+      width: 220px;
+      height: 60px;
+      display: flex;
+      margin-left: 180px;
+      border: none;
+
+      p {
+        font-size: 12px;
+        font-family: Lato;
+        margin-top: -10px;
+      }
+
+      h5 {
+        font-size: 14px;
+        font-family: Lato;
+        margin-top: -10px;
+        margin-right: 7px;
+      }
+    }
+
+    .arrow {
+      width: 36px;
+      height: 36px;
+      margin-top: -10px;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../images/arrow_up.png);
+    }
+
+    a:hover {
+      border: 2px solid #000;
+      .arrow {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../images/arrow_down.png);
+      }
+    }
+  }
+
+  #product {
+    width: 100%;
+    min-height: 600px;
+
+    //background-color: cornflowerblue;
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: center;
+
+    .itemblock {
+      width: 280px;
+      height: 600px;
+
+      padding: 10px;
+
+      display: flex;
+      flex-direction: column;
+
+      background-color: #fff;
+      margin: 12px;
+      box-shadow: 0px 2px 2px #999;
+
+      .image {
+        width: 280px;
+        height: 220px;
+      }
+
+      .content {
+        height: 200px;
+      }
+
+      .buynow {
+        width: 230px;
+        height: 50px;
+        border: 2px solid rgb(245, 170, 32);
+        text-decoration: none;
+
+        text-align: center;
+        padding-top: 14px;
+        align-self: center;
+
+        font-size: 16px;
+        margin-top: 100px;
+      }
+
+      .buynow:hover {
+        border: 2px solid #000;
+      }
+
+      .saleblock {
+        display: flex;
+
+        h4 {
+          color: #da0d0d;
+          font-family: Lato;
+        }
+      }
+
+      .truck {
+        display: flex;
+
+        .truck-icon {
+          width: 32px;
+          height: 20px;
+          margin-right: 10px;
+
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url(../images/truck.svg);
+        }
+      }
+
+      h3 {
+        font-size: 16px;
+        font-family: Lato;
+      }
+
+      h4 {
+        font-size: 20px;
+        font-family: GillLight;
+      }
+
+      h5 {
+        font-size: 16px;
+        font-family: Lato;
+      }
+
+      p {
+        font-size: 14px;
+        font-family: Lato;
+        padding-left: 10px;
+        color: #999;
+      }
+    }
+
+    .itemblock:hover {
+      border: 2px solid #000;
+    }
+  }
+}

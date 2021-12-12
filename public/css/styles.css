@@ -1,2 +1,758 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html,
+body {
+  height: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px; }
+
+.app {
+  min-height: 100vh;
+  position: relative; }
+
+@font-face {
+  font-family: CRegular;
+  src: url(../fonts/Caveat-Regular.ttf); }
+
+@font-face {
+  font-family: CBold;
+  src: url(../fonts/Caveat-Bold.ttf); }
+
+@font-face {
+  font-family: GillLight;
+  src: url(../fonts/GillSans-Light.ttf); }
+
+@font-face {
+  font-family: Gill;
+  src: url(../fonts/GillSans.ttf); }
+
+@font-face {
+  font-family: GillItalic;
+  src: url(../fonts/GillSans-Italic.ttf); }
+
+@font-face {
+  font-family: LatoBlack;
+  src: url(../fonts/Lato-Black.ttf); }
+
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato-Regular.ttf); }
+
+@font-face {
+  font-family: LatoItalic;
+  src: url(../fonts/Lato-Italic.ttf); }
+
+.link-nav {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 140px;
+  align-items: center;
+  font-family: Lato;
+  font-size: 25px;
+  color: #111; }
+  .link-nav .navtop {
+    display: flex;
+    width: 100%; }
+    .link-nav .navtop .logo {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../images/keurig_ca_logo.svg);
+      height: 30px;
+      min-width: 180px;
+      margin-top: 36px;
+      margin-left: 36px; }
+    .link-nav .navtop .searchbar {
+      width: 66%;
+      height: 40px;
+      display: flex;
+      margin-top: 30px; }
+      .link-nav .navtop .searchbar .searchicon {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../images/search.png);
+        width: 32px;
+        height: 32px;
+        background-color: #e9e9e9;
+        border-radius: 12px;
+        margin-left: calc(10% + 66px);
+        margin-top: 5px;
+        z-index: 4; }
+      .link-nav .navtop .searchbar input {
+        height: 40px;
+        width: 40%;
+        border-radius: 20px;
+        position: absolute;
+        border: none;
+        background: transparent;
+        background-color: #e9e9e9;
+        border: 1px solid #a9a9a9;
+        padding: 10px 50px;
+        margin: 0 10%;
+        z-index: 3; }
+    .link-nav .navtop .navside {
+      min-width: 320px;
+      display: flex;
+      margin-right: 0;
+      margin-top: 20px; }
+      .link-nav .navtop .navside a {
+        font-size: 16px;
+        margin: 14px;
+        padding: 5px;
+        border-radius: 10px; }
+      .link-nav .navtop .navside a:hover {
+        background-color: #e9e9e9; }
+      .link-nav .navtop .navside .free {
+        padding-top: 12px;
+        font-size: 16px;
+        font-family: GillLight; }
+  .link-nav .navbar {
+    margin-top: -10px;
+    padding-left: 30px;
+    height: 65px;
+    display: flex; }
+    .link-nav .navbar a {
+      font-size: 16px;
+      margin: 10px 0;
+      padding: 14px;
+      border-radius: 10px; }
+    .link-nav .navbar a:hover {
+      background-color: #e9e9e9; }
+    .link-nav .navbar .deals {
+      color: #c42727;
+      display: flex; }
+      .link-nav .navbar .deals .deals-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../images/discount.png); }
+  .link-nav .navlogin {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/person.png);
+    width: 36px;
+    height: 36px; }
+  .link-nav .navsignout {
+    display: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/person2.png);
+    width: 40px;
+    height: 40px; }
+  .link-nav .navcart {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/cart.png);
+    width: 40px;
+    height: 40px;
+    font-size: 10px;
+    font-family: Lato; }
+    .link-nav .navcart #number {
+      display: none;
+      margin: 20px;
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      background-color: #000;
+      color: #fff;
+      text-align: center; }
+
+nav {
+  z-index: 2;
+  display: none;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  width: 100px;
+  height: 50px; }
+
+.link-nav a {
+  text-decoration: none; }
+
+#menu {
+  display: flex;
+  flex-direction: column; }
+  #menu .navlogin {
+    display: block; }
+  #menu .navsignout {
+    display: none; }
+
+#modal {
+  display: none;
+  background-color: #e9e9e9;
+  width: 400px;
+  height: 250px;
+  border: 2px solid #000;
+  position: fixed;
+  left: calc(50% - 200px);
+  z-index: 99;
+  text-align: center; }
+  #modal h1 {
+    padding-top: 40px;
+    font-family: Lato;
+    font-size: 24px; }
+  #modal p {
+    font-family: Lato;
+    font-size: 16px; }
+
+@media only screen and (max-width: 1185px) {
+  .link-nav {
+    height: 170px; }
+    .link-nav .navtop .searchbar .searchicon {
+      margin-left: calc(5% + 36px); }
+    .link-nav .navtop .searchbar input {
+      width: 24%;
+      margin: 0 5%; }
+    .link-nav .navbar {
+      height: 90px; } }
+
+@media only screen and (max-width: 768px) {
+  .link-nav {
+    display: none; }
+  nav {
+    display: block;
+    right: 50px; } }
+
+#menuToggle {
+  display: block;
+  position: absolute;
+  top: 16px;
+  margin-left: 70px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none; }
+
+#menuToggle a {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease; }
+
+#menuToggle a:hover {
+  color: blue; }
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  /* hide this */
+  z-index: 99;
+  /* and place it over the hamburger */
+  -webkit-touch-callout: none; }
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #000;
+  border-radius: 3px;
+  z-index: 2;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%; }
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%; }
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323; }
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2); }
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px); }
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  z-index: 1;
+  position: absolute;
+  width: 1200px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #eee;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(0, -100%);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+  #menu .drop-icons {
+    display: flex;
+    margin-left: 16px; }
+  #menu .navlogin {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/person.png);
+    width: 27px;
+    height: 40px;
+    background-color: #eee;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 50px;
+    margin-bottom: 20px; }
+  #menu .navsignout {
+    display: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/person.png);
+    width: 27px;
+    height: 40px;
+    background-color: #eee;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 50px;
+    margin-bottom: 20px; }
+  #menu .navcart {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/cart.png);
+    width: 36px;
+    height: 36px;
+    background-color: #eee;
+    border: none;
+    padding: 10px 20px; }
+  #menu .navlogin:hover {
+    background-color: #fff;
+    border-radius: 5px; }
+  #menu .navsignout:hover {
+    background-color: #fff;
+    border-radius: 5px; }
+  #menu .navcart:hover {
+    background-color: #fff;
+    border-radius: 5px; }
+
+#menu a {
+  padding: 10px 20px;
+  margin-left: -20px;
+  font-size: 16px;
+  font-family: Lato;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: #333 solid 2px; }
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul {
+  transform: none; }
+
+footer {
+  width: 100%;
+  min-height: 440px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-self: center; }
+  footer .topfoot {
+    margin: 0 auto;
+    width: 1200px;
+    height: 60px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    padding: 20px; }
+    footer .topfoot p {
+      margin: 0 20px;
+      font-family: Lato;
+      font-size: 16px; }
+    footer .topfoot .follow {
+      margin-left: 420px; }
+    footer .topfoot .map-icon {
+      width: 20px;
+      height: 20px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../images/map-marker-1.png); }
+    footer .topfoot .twitter {
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      margin-right: 20px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../images/twitter.png); }
+    footer .topfoot .facebook {
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      margin-right: 20px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../images/facebook.png); }
+    footer .topfoot .instagram {
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      margin-right: 20px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../images/instagram.png); }
+  footer .contentfoot {
+    display: flex;
+    margin: 0 auto;
+    width: 1200px;
+    height: 300px;
+    align-items: center; }
+    footer .contentfoot .column {
+      width: 300px;
+      height: 100%;
+      display: flex;
+      flex-direction: column; }
+      footer .contentfoot .column p {
+        padding: 20px 0 0 20px;
+        font-size: 20px;
+        font-family: Lato; }
+      footer .contentfoot .column a {
+        text-decoration: none;
+        padding: 8px 0 0 20px;
+        font-size: 16px;
+        font-family: Lato; }
+      footer .contentfoot .column .news {
+        padding: 8px 0 0 20px;
+        font-size: 16px;
+        font-family: GillLight; }
+      footer .contentfoot .column .youremailbox {
+        margin-left: 20px;
+        height: 36px;
+        width: 270px;
+        display: flex; }
+        footer .contentfoot .column .youremailbox #emailsignup {
+          width: 200px;
+          padding-left: 10px; }
+        footer .contentfoot .column .youremailbox .confirm {
+          padding: 6px 10px;
+          width: 80px;
+          border: 2px solid #f5aa20; }
+        footer .contentfoot .column .youremailbox .confirm:hover {
+          background-color: #f5aa20; }
+      footer .contentfoot .column .states {
+        margin-left: 20px;
+        width: 200px;
+        height: 60px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../images/states.png); }
+  footer .bottomfoot {
+    margin: 0 auto;
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    padding: 20px 0;
+    border-top: #888 1px solid; }
+    footer .bottomfoot p {
+      margin: 0 20px 0 24%;
+      font-family: LatoItalic;
+      font-size: 12px; }
+    footer .bottomfoot a {
+      text-decoration: none;
+      margin: 0 8px;
+      font-family: LatoItalic;
+      font-size: 12px; }
+
+@media only screen and (max-width: 768px) {
+  .topfoot {
+    width: 100%; }
+  .contentfoot {
+    width: 100%; }
+  .bottomfoot {
+    width: 100%; } }
+
 .home {
-  font-size: 30px; }
+  min-height: 400px; }
+  .home .headerimg {
+    width: 1200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/CLP-Banner-CoffeeMakers-Holiday.webp);
+    text-align: center;
+    padding-top: 40px;
+    margin: 0 auto; }
+    .home .headerimg h1 {
+      font-family: GillLight;
+      font-size: 55px;
+      color: #fff; }
+    .home .headerimg h2 {
+      font-family: Lato;
+      font-size: 14px;
+      color: #fff; }
+  .home .options {
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex; }
+    .home .options a {
+      text-decoration: none;
+      display: flex;
+      font-family: Lato;
+      font-size: 14px;
+      border: 2px solid #999;
+      margin: 16px 5px;
+      padding: 14px 10px; }
+    .home .options .sort {
+      width: 220px;
+      height: 60px;
+      display: flex;
+      margin-left: 180px;
+      border: none; }
+      .home .options .sort p {
+        font-size: 12px;
+        font-family: Lato;
+        margin-top: -10px; }
+      .home .options .sort h5 {
+        font-size: 14px;
+        font-family: Lato;
+        margin-top: -10px;
+        margin-right: 7px; }
+    .home .options .arrow {
+      width: 36px;
+      height: 36px;
+      margin-top: -10px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../images/arrow_up.png); }
+    .home .options a:hover {
+      border: 2px solid #000; }
+      .home .options a:hover .arrow {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../images/arrow_down.png); }
+  .home #product {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    .home #product .itemblock {
+      width: 280px;
+      height: 600px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      margin: 12px;
+      box-shadow: 0px 2px 2px #999; }
+      .home #product .itemblock .image {
+        width: 280px;
+        height: 220px; }
+      .home #product .itemblock .content {
+        height: 200px; }
+      .home #product .itemblock .buynow {
+        width: 230px;
+        height: 50px;
+        border: 2px solid #f5aa20;
+        text-decoration: none;
+        text-align: center;
+        padding-top: 14px;
+        align-self: center;
+        font-size: 16px;
+        margin-top: 100px; }
+      .home #product .itemblock .buynow:hover {
+        border: 2px solid #000; }
+      .home #product .itemblock .saleblock {
+        display: flex; }
+        .home #product .itemblock .saleblock h4 {
+          color: #da0d0d;
+          font-family: Lato; }
+      .home #product .itemblock .truck {
+        display: flex; }
+        .home #product .itemblock .truck .truck-icon {
+          width: 32px;
+          height: 20px;
+          margin-right: 10px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url(../images/truck.svg); }
+      .home #product .itemblock h3 {
+        font-size: 16px;
+        font-family: Lato; }
+      .home #product .itemblock h4 {
+        font-size: 20px;
+        font-family: GillLight; }
+      .home #product .itemblock h5 {
+        font-size: 16px;
+        font-family: Lato; }
+      .home #product .itemblock p {
+        font-size: 14px;
+        font-family: Lato;
+        padding-left: 10px;
+        color: #999; }
+    .home #product .itemblock:hover {
+      border: 2px solid #000; }
+
+.loginpage {
+  height: 500px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .loginpage h1 {
+    font-family: LatoBlack;
+    font-size: 30px; }
+  .loginpage h4 {
+    font-family: LatoItalic;
+    font-size: 12px; }
+  .loginpage section {
+    width: 740px;
+    min-height: 500px;
+    display: flex;
+    justify-content: space-between; }
+    .loginpage section input {
+      border: 2px solid #000;
+      padding: 10px;
+      width: 100%;
+      margin-top: 20px; }
+    .loginpage section .login-here {
+      margin-top: 160px;
+      width: 210px;
+      height: 420px; }
+    .loginpage section .sign-up-here {
+      margin-top: 60px;
+      width: 250px;
+      height: 500px; }
+    .loginpage section .login {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      margin-top: 50px;
+      padding-top: 8px;
+      width: 100%;
+      height: 50px;
+      background-color: #000;
+      color: #fff;
+      border-radius: 50px;
+      font-family: GillLight;
+      font-size: 25px; }
+    .loginpage section a {
+      text-decoration: none; }
+
+.cart #cartitem {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  .cart #cartitem h1 {
+    margin: 0 auto;
+    font-family: GillLight;
+    font-size: 36px; }
+  .cart #cartitem .cartblock {
+    width: 280px;
+    height: 500px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 12px;
+    box-shadow: 0px 2px 2px #999; }
+    .cart #cartitem .cartblock .image {
+      width: 280px;
+      height: 220px; }
+    .cart #cartitem .cartblock .content {
+      height: 200px; }
+    .cart #cartitem .cartblock .saleblock {
+      display: flex; }
+      .cart #cartitem .cartblock .saleblock h4 {
+        color: #da0d0d; }
+    .cart #cartitem .cartblock .truck {
+      display: flex; }
+      .cart #cartitem .cartblock .truck .truck-icon {
+        width: 32px;
+        height: 20px;
+        margin-right: 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../images/truck.svg); }
+    .cart #cartitem .cartblock h3 {
+      font-size: 16px;
+      font-family: Lato; }
+    .cart #cartitem .cartblock h4 {
+      font-size: 20px;
+      font-family: GillLight; }
+    .cart #cartitem .cartblock h5 {
+      font-size: 16px;
+      font-family: Lato; }
+    .cart #cartitem .cartblock p {
+      font-size: 14px;
+      font-family: Lato;
+      padding-left: 10px;
+      color: #999; }
+
+.cart .empty-cart-button {
+  text-decoration: none;
+  display: flex;
+  margin: 20px auto;
+  background-color: #000;
+  color: #fff;
+  font-size: 24px;
+  font-family: Lato;
+  width: 200px;
+  height: 80px;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center; }

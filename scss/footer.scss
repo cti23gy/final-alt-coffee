@@ -1,0 +1,178 @@
+footer {
+  //background-color: aquamarine;
+  width: 100%;
+  min-height: 440px;
+
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+
+  align-self: center;
+
+  .topfoot {
+    margin: 0 auto;
+    width: 1200px;
+    height: 60px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    padding: 20px;
+
+    p {
+      margin: 0 20px;
+      font-family: Lato;
+      font-size: 16px;
+    }
+
+    .follow {
+      margin-left: 420px;
+    }
+
+    .map-icon {
+      width: 20px;
+      height: 20px;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../images/map-marker-1.png);
+    }
+
+    .twitter {
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      margin-right: 20px;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../images/twitter.png);
+    }
+    .facebook {
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      margin-right: 20px;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../images/facebook.png);
+    }
+    .instagram {
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      margin-right: 20px;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../images/instagram.png);
+    }
+  }
+
+  .contentfoot {
+    display: flex;
+    margin: 0 auto;
+    width: 1200px;
+    height: 300px;
+    //background-color: bisque;
+    align-items: center;
+
+    .column {
+      width: 300px;
+      height: 100%;
+      //background-color: cadetblue;
+
+      display: flex;
+      flex-direction: column;
+
+      p {
+        padding: 20px 0 0 20px;
+        font-size: 20px;
+        font-family: Lato;
+      }
+
+      a {
+        text-decoration: none;
+        padding: 8px 0 0 20px;
+        font-size: 16px;
+        font-family: Lato;
+      }
+
+      .news {
+        padding: 8px 0 0 20px;
+        font-size: 16px;
+        font-family: GillLight;
+      }
+
+      .youremailbox {
+        margin-left: 20px;
+        //background-color: blue;
+        height: 36px;
+        width: 270px;
+        display: flex;
+        #emailsignup {
+          width: 200px;
+          padding-left: 10px;
+        }
+        .confirm {
+          padding: 6px 10px;
+          width: 80px;
+          border: 2px solid rgb(245, 170, 32);
+        }
+        .confirm:hover {
+          background-color: rgb(245, 170, 32);
+        }
+      }
+
+      .states {
+        margin-left: 20px;
+        width: 200px;
+        height: 60px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../images/states.png);
+      }
+    }
+  }
+
+  .bottomfoot {
+    margin: 0 auto;
+    width: 1200px;
+    height: 100px;
+    //background-color: blueviolet;
+    display: flex;
+
+    padding: 20px 0;
+    border-top: #888 1px solid;
+
+    p {
+      margin: 0 20px 0 24%;
+      font-family: LatoItalic;
+      font-size: 12px;
+    }
+
+    a {
+      text-decoration: none;
+      margin: 0 8px;
+      font-family: LatoItalic;
+      font-size: 12px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .topfoot {
+    width: 100%;
+  }
+  .contentfoot {
+    width: 100%;
+  }
+  .bottomfoot {
+    width: 100%;
+  }
+}

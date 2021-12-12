@@ -1,0 +1,103 @@
+.cart {
+  #cartitem {
+    width: 100%;
+    min-height: 600px;
+
+    //background-color: cornflowerblue;
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: center;
+
+    h1 {
+      margin: 0 auto;
+      font-family: GillLight;
+      font-size: 36px;
+    }
+
+    .cartblock {
+      width: 280px;
+      height: 500px;
+
+      padding: 10px;
+
+      display: flex;
+      flex-direction: column;
+
+      background-color: #fff;
+      margin: 12px;
+      box-shadow: 0px 2px 2px #999;
+
+      .image {
+        width: 280px;
+        height: 220px;
+      }
+
+      .content {
+        height: 200px;
+      }
+
+      .saleblock {
+        display: flex;
+
+        h4 {
+          color: #da0d0d;
+        }
+      }
+
+      .truck {
+        display: flex;
+
+        .truck-icon {
+          width: 32px;
+          height: 20px;
+          margin-right: 10px;
+
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url(../images/truck.svg);
+        }
+      }
+
+      h3 {
+        font-size: 16px;
+        font-family: Lato;
+      }
+
+      h4 {
+        font-size: 20px;
+        font-family: GillLight;
+      }
+
+      h5 {
+        font-size: 16px;
+        font-family: Lato;
+      }
+
+      p {
+        font-size: 14px;
+        font-family: Lato;
+        padding-left: 10px;
+        color: #999;
+      }
+    }
+  }
+
+  .empty-cart-button {
+    text-decoration: none;
+    display: flex;
+    margin: 20px auto;
+    background-color: #000;
+    color: #fff;
+    font-size: 24px;
+    font-family: Lato;
+
+    width: 200px;
+    height: 80px;
+    border-radius: 40px;
+
+    justify-content: center;
+    align-items: center;
+  }
+}
